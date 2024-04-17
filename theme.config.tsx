@@ -2,16 +2,19 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span><b>CMSLAB</b></span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/prayagyadav/cmslab.git',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://10.4.48.61/',
+    icon: (
+      <p>Internal Wiki</p>
+    )
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/prayagyadav/cmslab.git',
   footer: {
-    text: 'Nextra Docs Template',
+    text: '© 2024 CMSLab',
   },
 }
 
