@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
       <p>Internal Wiki</p>
     )
   },
-  docsRepositoryBase: 'https://github.com/prayagyadav/cmslab.git',
+  docsRepositoryBase: 'https://github.com/prayagyadav/cmslab/blob/main',
   footer: {
     text: '© 2024 CMSLab',
   },
