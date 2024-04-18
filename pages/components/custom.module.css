@@ -1,12 +1,3 @@
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 .container {
   padding: 2px 16px;
@@ -24,3 +15,23 @@
   background-color: #ffffff; 
 }
 
+.card {
+  display: block; 
+  padding: 1.5rem; 
+  border-radius: 0.5rem; 
+  border-width: 1px; 
+  border-color: #E5E7EB; 
+  max-width: 24rem; 
+  background-color: #ffffff; 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+}
+
+.card:hover {
+ background-color: #F3F4F6; 
+ }
+
+
+
+:hover {
+ background-color: #F3F4F6; 
+ }
