@@ -29,3 +29,11 @@
 .card:hover {
  background-color: #F3F4F6; 
  }
+
+ .grid{
+  display: grid  ;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); 
+  gap: 1rem; 
+ }
+
+ /* #282829 */
