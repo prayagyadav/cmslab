@@ -4,23 +4,27 @@ import styles from './components/custom.module.css'
 
 ## Faculty:
 
-export function Card() {
+export function Card(name, pfplink, email, description) {
   return <>
         <div className={styles.card}>
          <div>
-          <a href="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png">
-           <img alt="Bhawna Gomber" src="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png" width="100%" />
+          <a href=pfplink>
+           <img alt=name src=pfplink width="100%" />
           </a>
          </div>
          <div className={styles.container}>
-           <p><b>Dr. Bhawna Gomber</b></p>
-           <a href="mailto:bhawna.gomber@cern.ch"><i className={styles.redcolor}>Email</i></a>
+           <p><b>name</b></p>
+           <a href="mailto:"+email><i className={styles.redcolor}>Email</i></a>
          </div>
         </div>
         </>
 }
 
-<Card />
+<Card 
+name="Dr. Bhawna Gomber"
+pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+/>
 
 ## PhD students:
   * Bisnupriya Sahu
