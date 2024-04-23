@@ -17,12 +17,7 @@ const config: DocsThemeConfig = {
     text: '© 2024 CMSLab',
   },
   primaryHue:{dark:344.86 , light:344.86 },
-  primarySaturation:{dark:100, light:80 },
-  logo: (
-    <>
-      <i>CMSLAB</i>
-    </>
-  )
+  primarySaturation:{dark:100, light:80 }
 }
 
 export default config
