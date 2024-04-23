@@ -16,6 +16,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: '© 2024 CMSLab',
   },
+  primaryHue:{dark:344.86 , light:344.86 }
 }
 
 export default config
