@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
       <link rel="shortcut icon" href="/favicon.ico" />
       <meta property="og:title" content="CMSLAB" />
       <meta property="og:description" content="The homepage of Experimental High Energy Physics and Ultrafast Electronics Lab" />
-      <meta property="og:image" content="https://uohyd.ac.in/wp-content/uploads/2021/10/uoh-logo-horizontal.png" />
+      <meta property="og:image" content="/img/uohlogo.svg" />
     </>
   ),
   logo: (
