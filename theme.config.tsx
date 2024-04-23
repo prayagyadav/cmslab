@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   },
   head:(
     <>
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/img/uohlogo.svg" />
       <meta property="og:title" content="CMSLAB" />
       <meta property="og:description" content="The homepage of Experimental High Energy Physics and Ultrafast Electronics Lab" />
       <meta property="og:image" content="/img/uohlogo.svg" />
