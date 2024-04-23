@@ -17,7 +17,7 @@ const config: DocsThemeConfig = {
   ),
   logo: (
     <>
-    <img>CMSLAB</img>
+    <b>CMSLAB</b>
     </>
   ),
   project: {
