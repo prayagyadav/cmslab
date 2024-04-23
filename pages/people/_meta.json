@@ -1,6 +1,9 @@
 {
   "index": {
     "title": "Bhawna",
-    "type": "page"
+    "type": "page",
+    "theme":{
+      "sidebar":false
+    }
   }
 }
