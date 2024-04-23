@@ -3,7 +3,11 @@
     "title": "Bhawna",
     "type": "page",
     "theme":{
-      "sidebar":false
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": false,
+      "toc": true,
+      "pagination": true
     }
   }
 }
