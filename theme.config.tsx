@@ -1,6 +1,7 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Logo from './public/logo'
+import styles from './styles/custom.module.css'
 
 const config: DocsThemeConfig = {
   useNextSeoProps() {
@@ -25,7 +26,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://10.4.49.166/',
     icon: (
-      <p>Internal Wiki</p>
+      <p className={styles.centre}>Internal Wiki</p>
     )
   },
   docsRepositoryBase: 'https://github.com/prayagyadav/cmslab/blob/main',

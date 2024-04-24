@@ -1,11 +1,11 @@
-import classes from "/styles/logo.module.css"
+import classes from "/styles/custom.module.css"
 
 export default function Logo(){
     return (
         <>
             <div className={classes.logo} >
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 width="30%" viewBox="0 0 704 528" enable-background="new 0 0 704 528">
+	 width="30%" viewBox="0 0 704 528" enableBackground="new 0 0 704 528">
 <path fill="currentcolor" opacity="1.000000" stroke="currentcolor" 
 	d="
 M705.000000,52.535347 
