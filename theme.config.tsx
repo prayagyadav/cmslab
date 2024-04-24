@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import Logo from './public/logo'
 
 const config: DocsThemeConfig = {
   useNextSeoProps() {
@@ -9,16 +10,14 @@ const config: DocsThemeConfig = {
   },
   head:(
     <>
-      <link rel="shortcut icon" href="/img/uohlogo.svg" />
+      <link rel="shortcut icon" href="/img/cmslablogo.jpeg" />
       <meta property="og:title" content="CMSLAB" />
       <meta property="og:description" content="The homepage of Experimental High Energy Physics and Ultrafast Electronics Lab" />
-      <meta property="og:image" content="/img/uohlogo.svg" />
+      <meta property="og:image" content="/img/cmslablogo.jpeg" />
     </>
   ),
   logo: (
-    <>
-    <b>CMSLAB</b>
-    </>
+    <Logo />
   ),
   project: {
     link: 'https://github.com/prayagyadav/cmslab/blob/main',
