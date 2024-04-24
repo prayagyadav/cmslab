@@ -2,7 +2,24 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span><b>CMSLAB</b></span>,
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – CMSLab'
+    }
+  },
+  head:(
+    <>
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <meta property="og:title" content="CMSLAB" />
+      <meta property="og:description" content="The homepage of Experimental High Energy Physics and Ultrafast Electronics Lab" />
+      <meta property="og:image" content="https://uohyd.ac.in/wp-content/uploads/2021/10/uoh-logo-horizontal.png" />
+    </>
+  ),
+  logo: (
+    <>
+    <b>CMSLAB</b>
+    </>
+  ),
   project: {
     link: 'https://github.com/prayagyadav/cmslab/blob/main',
   },
@@ -17,7 +34,9 @@ const config: DocsThemeConfig = {
     text: '© 2024 CMSLab',
   },
   primaryHue:{dark:344.86 , light:344.86 },
-  primarySaturation:{dark:80, light:100 }
+  primarySaturation:{dark:80, light:100 },
+  search:{placeholder:"Search CMSLab"}
 }
 
 export default config
+

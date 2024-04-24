@@ -1,5 +1,6 @@
 import styles from './components/custom.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 # People
 
@@ -8,105 +9,95 @@ import Link from 'next/link'
 export function Card(props) {
   const emailprefix="mailto:"
   const pagelink=props.page
+  const imglink=props.pfplink
+  const name=props.name
+  const description=props.description
+  const address=props.address
+  const email=props.email
   return <>
-        <div className="block border max-w-lg bg-white p-2 rounded-md hover:bg-gray-100 text-black">
-         <div>
-          <Link href={{pathname: pagelink}}>
-           <img alt={props.name} src={props.pfplink} width="100%" />
-          </Link>
-         </div>
-         <div className="padding: 2px 16px;">
-           <p><b>{props.name}</b></p>
-           <Link href={emailprefix.concat(props.email)}><i className="text-red-700">Email</i></Link>
-           <p>{props.description}</p>
-           <br></br>
-           <i className='text-sm'>{props.address}</i>
-         </div>
+        <div className="flex mb-4 w-full">
+          <div className='p-4 w-1/2'>
+            <Link href={{pathname: pagelink}}>
+              <Image alt={name} src={imglink} width={1000} height={1000}/>
+            </Link>
+          </div>
+          <div className="p-4 w-1/2">
+            <p><b>{name}</b></p>
+            <Link href={emailprefix.concat(email)}><p className="text-red-700 hover:text-red-400">Email</p></Link>
+            <Link href={{pathname: pagelink}}><p className="text-red-700 hover:text-red-400">Profile Page↗️</p></Link>
+            <p>{description}</p>
+            <i className='text-sm'>{address}</i>
+          </div>
         </div>
         </>
 }
 
-<div className="grid grid-cols-4 gap-4">
-  <div>
-    <Card 
-    name="Dr. Bhawna Gomber"
-    pfplink="/img/bhawna.jpg"
-    email="bhawna.gomber@cern.ch"
-    page="/profiles/bhawna"
-    address="104, CASEST, UoH"
-    description="Group Leader"
-    />
-  </div>
-</div>
+
+<Card 
+name="Dr. Bhawna Gomber"
+pfplink="/img/bhawna.jpg"
+email="bhawna.gomber@cern.ch"
+page="/people/bhawna"
+address="104, CASEST, UoH"
+description="Group Leader"
+/>
 
 ## PhD students:
 
-<div className="grid grid-cols-4 gap-4">
-  <div>
-    <Card 
-    name="Bisnupriya Sahu"
-    pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
-    email="bhawna.gomber@cern.ch"
-    address="102, CASEST, UoH"
-    description=""
-    />
-  </div>
-  <div>
-    <Card 
-    name="Shriniketan Aacharya"
-    pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
-    email="bhawna.gomber@cern.ch"
-    address="102, CASEST, UoH"
-    description=""
-    />
-  </div>
-  <div>
-    <Card 
-    name="Piyush Kumar"
-    pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
-    email="bhawna.gomber@cern.ch"
-    address="102, CASEST, UoH"
-    description=""
-    />
-  </div>
-  <div>
-    <Card 
-    name="Himanshu maurya"
-    pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
-    email="bhawna.gomber@cern.ch"
-    address="102, CASEST, UoH"
-    description=""
-    />
-  </div>
-</div>
+
+<Card 
+name="Bisnupriya Sahu"
+pfplink="/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+address="102, CASEST, UoH"
+description=""
+/>
+<Card 
+name="Shriniketan Aacharya"
+pfplink="/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+address="102, CASEST, UoH"
+description=""
+/>
+<Card 
+name="Piyush Kumar"
+pfplink="/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+address="102, CASEST, UoH"
+description=""
+/>
+<Card 
+name="Himanshu maurya"
+pfplink="/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+address="102, CASEST, UoH"
+description=""
+/>
+
 ## Project Students:
-<div className="grid grid-cols-4 gap-4">
-  <div>
-    <Card 
-    name="Prayag Yadav"
-    pfplink="https://www.prayagyadav.me/images/indexpfp.avif"
-    email="19ipmp03@gmail.com"
-    page="/profiles/prayag"
-    description=""
-    />
-  </div>
-  <div>
-    <Card 
-    name="Lakshmi Praharsha"
-    pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
-    email="bhawna.gomber@cern.ch"
-    description=""
-    />
-  </div>
-  <div>
-    <Card 
-    name="Ananya Prakash"
-    pfplink="https://raw.githubusercontent.com/prayagyadav/cmslab/main/public/img/default_avatar.png"
-    email="bhawna.gomber@cern.ch"
-    description=""
-    />
-  </div>
-</div>
+
+<Card 
+name="Prayag Yadav"
+pfplink="/img/prayag.jpg"
+email="19ipmp03@gmail.com"
+page="https://www.prayagyadav.me"
+description=""
+/>
+
+<Card 
+name="Lakshmi Praharsha"
+pfplink="/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+description=""
+/>
+
+<Card 
+name="Ananya Prakash"
+pfplink="/img/default_avatar.png"
+email="bhawna.gomber@cern.ch"
+description=""
+/>
+
 
 ## Past Students: 
   * Sambit Sathapathy
