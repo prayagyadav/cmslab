@@ -17,14 +17,7 @@
   },
   "docs":{
     "title":"Docs",
-    "type":"page",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": true,
-      "pagination": true
-  }
+    "type":"page"
 },
   "contact": {
     "title": "Contact",
