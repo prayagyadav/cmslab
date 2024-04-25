@@ -17,10 +17,7 @@
   },
   "docs":{
     "title":"Docs",
-    "type":"page",
-    "theme":{
-      "sidebar":true
-    }
+    "type":"page"
 },
   "contact": {
     "title": "Contact",
