@@ -17,8 +17,15 @@
   },
   "docs":{
     "title":"Docs",
-    "type":"page"
-  },
+    "type":"page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+  }
+},
   "contact": {
     "title": "Contact",
     "type": "page"
