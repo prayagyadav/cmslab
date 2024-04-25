@@ -1,23 +1,9 @@
 {
-    "getting_started":{
-        "title":"Getting started"
-    },
-    "cern_info":{
-        "title":"CERN related info"
-    },
-    "linux":{
-        "title":"GNU/Linux for beginners"
-    },
-    "root":{
-        "title":"Root for beginners"
-    },
-    "coffea":{
-        "title":"COFFEA for beginners"
-    },
-    "computing":{
-        "title":"Computing related info"
-    },
-    "facilities":{
-        "title":"Facilities"
-    }
+    "getting_started":"Getting started",
+    "cern_info":"CERN related info",
+    "linux":"GNU/Linux for beginners",
+    "root":"Root for beginners",
+    "coffea":"COFFEA for beginners",
+    "computing":"Computing related info",
+    "facilities":"Facilities"
 }

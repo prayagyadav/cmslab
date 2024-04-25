@@ -1,14 +1,6 @@
-{   "index":{
-    "title":"Documentation home"
-},
-    "physics":{
-        "title":"Physics"
-    },
-    "hardware":{
-        "title":"Hardware"
-    },
-    "others":{
-        "title":"Others"
-    }
+{   "docs":"Documentation home",
+    "physics":"Physics",
+    "hardware":"Hardware",
+    "others":"Others"
   }
   

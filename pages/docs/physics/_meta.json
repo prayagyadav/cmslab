@@ -1,8 +1,4 @@
 {
-    "about_cms":{
-        "title":"About CMS"
-    },
-    "physics_analyses":{
-        "title":"Physics Analyses"
-    }
+    "about_cms":"About CMS",
+    "physics_analyses":"Physics Analyses"
 }

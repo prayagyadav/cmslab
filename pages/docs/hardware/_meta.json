@@ -1,8 +1,4 @@
 {
-    "cmslab-workstation":{
-        "title":"CMSLAB Workstation"
-    },
-    "triggerupgrade":{
-        "title":"Phase 2 L1 upgrade"
-    }
+    "cmslab-workstation":"CMSLAB Workstation",
+    "triggerupgrade":"Phase 2 L1 upgrade"
 }
