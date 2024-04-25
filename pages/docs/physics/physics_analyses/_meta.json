@@ -1,7 +1,4 @@
 {   
-    "physics_analyses":{
-        "title":"Physics Analyses"
-    },
     "monohiggstobbbar":{
         "title":"Mono Higgs to bbbar"
     }
