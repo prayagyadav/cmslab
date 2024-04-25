@@ -1,0 +1,15 @@
+{
+    "index": {
+      "title":"Docs"
+    },
+    "physics":{
+        "title":"Physics"
+    },
+    "hardware":{
+        "title":"Hardware"
+    },
+    "others":{
+        "title":"Others"
+    }
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "getting_started":{
+        "title":"Getting started"
+    },
+    "cern_info":{
+        "title":"CERN related info"
+    },
+    "linux":{
+        "title":"GNU/Linux for beginners"
+    },
+    "root":{
+        "title":"Root for beginners"
+    },
+    "coffea":{
+        "title":"COFFEA for beginners"
+    },
+    "computing":{
+        "title":"Computing related info"
+    },
+    "facilities":{
+        "title":"Facilities"
+    }
+}
