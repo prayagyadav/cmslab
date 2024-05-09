@@ -26,7 +26,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://10.4.48.61/',
     icon: (
-      <p className={styles.centre}>Internal Wiki</p>
+      <p className={styles.centre}>Internal Wiki↗️</p>
     )
   },
   docsRepositoryBase: 'https://github.com/prayagyadav/cmslab/blob/main',
