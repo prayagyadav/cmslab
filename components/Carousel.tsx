@@ -1,4 +1,4 @@
-import { Carousel } from "@material-tailwind/react";
+import {Carousel} from "@material-tailwind/react";
  
 export default function CarouselCustomNavigation() {
   return (<>
@@ -20,6 +20,9 @@ export default function CarouselCustomNavigation() {
       loop={true}
       autoplay={true}
       autoplayDelay={8000}
+      placeholder="placeholder"
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
 
     >
       <img
