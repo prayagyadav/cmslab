@@ -3,10 +3,6 @@
     "title":"Home",
     "type":"page"
   },
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "research": {
     "title": "Research",
     "type": "page"
