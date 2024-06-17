@@ -14,7 +14,8 @@ export function Card(props) {
   const description=props.description
   const address=props.address
   const email=props.email
-  return <>
+  if (pagelink !== undefined ) {
+    return <>
         <div className="flex mb-4 w-full">
           <div className='p-4 w-1/2'>
             <Link href={{pathname: pagelink}}>
@@ -30,6 +31,25 @@ export function Card(props) {
           </div>
         </div>
         </>
+  }
+  else {
+    return <>
+        <div className="flex mb-4 w-full">
+          <div className='p-4 w-1/2'>
+            <Link href={{pathname: pagelink}}>
+              <Image alt={name} src={imglink} width={1000} height={1000}/>
+            </Link>
+          </div>
+          <div className="p-4 w-1/2">
+            <p><b>{name}</b></p>
+            <Link href={emailprefix.concat(email)}><p className="text-red-700 hover:text-red-400">Email</p></Link>
+            <p>{description}</p>
+            <i className='text-sm'>{address}</i>
+          </div>
+        </div>
+        </>
+  }
+  
 }
 
 
@@ -92,30 +112,46 @@ address="School of Physics, UoH"
 description=""
 />
 
+<Card 
+name="Binsa"
+pfplink="/img/default_avatar.png"
+email="23phmp22@uohyd.ac.in"
+address="School of Physics, UoH"
+description=""
+/>
+
+<Card 
+name="Jeevesh"
+pfplink="/img/default_avatar.png"
+email="23phmp46@uohyd.ac.in"
+address="School of Physics, UoH"
+description=""
+/>
+
 
 ## Past Students: 
 
 ### Past MTech Students
 
 | Name | Year | Affiliation | Current Position | Contact |
-| ---------------------- | --------- | ----------------------- | ----------- | ---------- |
-| **Adluri Pranathi**    | 2019-2021 | University of Hyderabad |             |            |
-| **Rangula Sriteja**    | 2019-2021 | University of Hyderabad |             |            |
+| ---------------------- | --------- | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------ |
+| **Adluri Pranathi**    | 2019-2021 | University of Hyderabad | Digital Design engineer @ Chemnitz, Saxony, Germany | [LinkedIn](https://www.linkedin.com/in/pranathi-adluri-84a2971a5/)  |
+| **Rangula Sriteja**    | 2019-2021 | University of Hyderabad |                                                     |                                                                    |
 
 ### Past Msc Project Students
 
 | Name | Year | Affiliation | Current Position | Contact |
-| --------------------------- | --------- | ----------------------- | ------------------------------------------ | --------------------------------------------------------------- |
-| **Prayag Yadav**            | 2022-2024 | University of Hyderabad | HSF-India project fellow                   | [Portfolio](https://www.prayagyadav.me)                         |
-| **Lakshmi Praharsha**       | 2023-2024 | University of Hyderabad |                                            |                                                                 |
-| **Sambit Sathapathy**       | 2022-2023 | University of Hyderabad | Junior research specialist at ST Solutions | [LinkedIn](https://www.linkedin.com/in/sambitsatapathy9/)       |
-| **Vignesh Vavilla**         | 2021-2022 |                         |                                            |                                                                 |
-| **Shushobhan Mandal**       | 2019-2021 | University of Hyderabad |                                            |                                                                 |
-| **Anshuman Das**            | 2019-2021 | University of Hyderabad | DRP Trainee, BARC Mumbai                   | [LinkedIn](https://www.linkedin.com/in/anshuman-das-451b78126/) |
-| **Ganpisetti Saimadhavi**   | 2019-2021 | University of Hyderabad |                                            |                                                                 |
-| **Chinmayee Bharati Dalal** | 2019-2020 | University of Hyderabad | Research Engineer @ Gen                    | [LinkedIn](https://www.linkedin.com/in/cbharati/)               |
-| **Arnab Pal**               | 2018-2020 | University of Hyderabad |                                            |                                                                 |
-| **Charu Gupta**             | 2017-2019 | University of Hyderabad | Now a Phd Student at TIFR                  |                                                                 |
+| --------------------------- | --------- | ------------------------------------------------ | ------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **Prayag Yadav**            | 2022-2024 | University of Hyderabad                          | HSF-India project fellow                   | [Portfolio](https://www.prayagyadav.me)                                                 |
+| **Lakshmi Praharsha**       | 2023-2024 | University of Hyderabad                          |                                            |                                                                                         |
+| **Sambit Sathapathy**       | 2022-2023 | University of Hyderabad                          | Junior research specialist at ST Solutions | [LinkedIn](https://www.linkedin.com/in/sambitsatapathy9/)                               |
+| **Vignesh Vavilla**         | 2022-2023 | Karpagam academy of higher education, Coimbatore | PhD student at NCHU, Taiwan                | [LinkedIn](https://www.linkedin.com/in/vignesh-vavillakula-venkataramana-rao-8a4bb3269) |
+| **Shushobhan Mandal**       | 2019-2021 | University of Hyderabad                          |                                            |                                                                                         |
+| **Anshuman Das**            | 2019-2021 | University of Hyderabad                          | DRP Trainee, BARC Mumbai                   | [LinkedIn](https://www.linkedin.com/in/anshuman-das-451b78126/)                         |
+| **Ganpisetti Saimadhavi**   | 2019-2021 | University of Hyderabad                          |                                            |                                                                                         |
+| **Chinmayee Bharati Dalal** | 2019-2020 | University of Hyderabad                          | Research Engineer @ Gen                    | [LinkedIn](https://www.linkedin.com/in/cbharati/)                                       |
+| **Arnab Pal**               | 2018-2020 | University of Hyderabad                          |                                            |                                                                                         |
+| **Charu Gupta**             | 2017-2019 | University of Hyderabad                          | Phd Student at TIFR                        |                                                                                         |
 
 ### Past Internship Students
 
